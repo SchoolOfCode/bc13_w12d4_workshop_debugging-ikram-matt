@@ -1,4 +1,4 @@
-const calcs = require("./index.js");
+const calcs = require("./index.cjs");
 
 test("The add function should return 7", () => {
   expect(calcs.add(2, 5)).toBe(7);
@@ -32,5 +32,5 @@ test("The Calculator should return 12", () => {
   expect(calcs.calculator(3, "*", 4)).toBe(12);
 });
 test("The Calculator should return 5", () => {
-  expect(calcs.calculator(15,"/",3)).toBe(5);
+  expect(calcs.calculator(15, "/", 3)).toBe(5);
 });
